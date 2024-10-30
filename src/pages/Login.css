@@ -1,0 +1,19 @@
+/* Login.css */
+
+/* Container for the Login Page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 80vh; /* Ensures the container takes up at least 80% of the viewport height */
+    background-color: #101820; /* Background color matching the overall theme */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+        min-height: 60vh; /* Adjust height for smaller screens */
+    }
+}

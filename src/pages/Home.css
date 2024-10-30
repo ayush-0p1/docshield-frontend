@@ -1,0 +1,77 @@
+.home-container {
+    padding: 40px;
+    text-align: center;
+}
+
+.home-container h1 {
+    margin-bottom: 20px;
+}
+
+.split-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.split {
+    flex: 1;
+    min-width: 250px;
+    background-color: #1C1C1C;
+    border: 2px solid #FEE715;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(231, 247, 4, 0.2);
+    transition: flex 0.5s ease;
+}
+
+.split:hover {
+    flex: 1.5;
+}
+
+.split .content {
+    text-align: center;
+}
+
+.split h2 {
+    margin-bottom: 10px;
+}
+
+.split p {
+    margin-bottom: 20px;
+}
+
+.split .button {
+    padding: 10px 20px;
+    background-color: #FEE715;
+    color: #101820;
+    border: 2px solid #FEE715;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.split .button:hover {
+    background-color: #1C1C1C;
+    color: #FEE715;
+    transform: scale(1.05);
+}
+
+.split .button:active {
+    background-color: #333333;
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .split {
+        width: 100%;
+    }
+}
